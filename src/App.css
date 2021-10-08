@@ -1,38 +1,203 @@
 .App {
   text-align: center;
+  background: #000;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* sideBar CSS */
+
+
+.sidebarcon {
+ position: absolute;
+  top: 0; 
+  width: auto; 
+  padding-left: 2vw;
+  padding-right: 1vw;
+  padding-top: 2vh;
+}
+
+.line {
+  border-bottom: 0.5px solid grey;
+}
+
+#sideBar {
+  height: auto;
+  margin-bottom: 0%;
+  color: grey;
+  font-weight: bold;
+}
+
+/* .sideImg {
+  vertical-align: 50%;
+} */
+
+#sidebarBody {
+  padding: 0%;
+}
+
+.sidebar-ul {
+  height: 40vh;
+ /*  width: 411px; */
+  overflow: scroll;
+  list-style-type: none;
+  font-size: 20px;
+  color: grey;
+  padding: 0%;
+  font-weight: 280;
+  position: relative;
+}
+
+.li {
+  margin-top: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(107,107,107,1);
+    border-radius: 5px;
+    
   }
-}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .col-10 {
+      padding: 0%;
+  }
+
+  .col-2 {
+      padding: 20px;
+      padding-right: 10px;
+  }
+
+  #people {
+      position: absolute;
+      right: 25px;
+  }
+
+  #createPlaylist {
+
+      background-color: rgb(156, 156, 156) ;
+      color: black;
+  }
+
+ /*  h1 {
+      font-size: 70px;
+      font-weight: bold;
+      position: absolute;
+      top: 180px;
+      left: 30px;
+  }
+
+  #verified {
+      position: absolute;
+      top: 160px;
+      left: 30px;
+  } */
+
+
+  .mediaPlayerFooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #181818;
+    height: 5rem;
+    color: white;
+
+  }
+  
+  .mediaPlayerFooter .leftFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  
+  .mediaPlayerFooter .middleFooter .col-12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mediaPlayerFooter img {
+    height: 3rem;
+    width: 6rem;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    top: 0.1rem;
+    bottom: 0.8rem;
+  }
+  
+  #footerButton {
+    margin-left: 0.3rem;
+    background-color: transparent;
+    border: 0;
+  }
+  /* 
+  #play i {
+    transform: scale(1.8);
+  } */
+  
+  progress::-webkit-progress-value {
+    background: rgb(131, 129, 129);
+    border-radius: 100px;
+  }
+  
+  progress::-moz-progress-bar {
+    background: rgb(255, 255, 255);
+    border-radius: 100px;
+  }
+  
+  progress::-webkit-progress-value {
+    background: rgb(255, 255, 255);
+    border-radius: 100px;
+  }
+  
+  progress::-webkit-progress-bar {
+    background: rgb(131, 129, 129);
+    border-radius: 100px;
+  }
+  
+  .progress {
+    margin-top: 10px;
+    display: inline-block;
+    width: 30%;
+    max-height: 5px;
+    left: 490px;
+    top: 60px;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+  }
+  
+  .rightFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+  }
+  
+   #homePage {
+     position: absolute;
+    right: 0;   
+     
+    color: white;
+  } 
